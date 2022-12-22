@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 import { DisplayCampaigns } from '../components';
 import { useStateContext } from '../context'
 
-const Home = () => {
+const Home = ({ darkMode }) => {
   const [isLoading, setIsLoading] = useState(false);
   const [campaigns, setCampaigns] = useState([]);
 
@@ -21,7 +21,7 @@ const Home = () => {
   }, [address, contract]);
 
   return (
-    <DisplayCampaigns 
+    <DisplayCampaigns darkMode={darkMode} 
       title="All Campaigns"
       isLoading={isLoading}
       campaigns={campaigns}
