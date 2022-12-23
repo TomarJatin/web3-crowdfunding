@@ -2,8 +2,15 @@ import React from 'react'
 import "../../src/styles.css"
 import { logo } from '../assets';
 import CCards from "../components/CCards"
+import { Navigate } from 'react-router-dom';
 import {CreateCamp,TrackCamp,DonateCamp} from '../assets'
+import { useNavigate } from 'react-router-dom';
 function Homepage() {
+    const navigate = useNavigate();
+    const pageHandler=()=>{
+        navigate("/home");
+    }
+    
   return (
     <div className="NewHomepage">
         <div className="nav">
@@ -19,7 +26,7 @@ function Homepage() {
                 {/* <img className="Banner" src="https://img.freepik.com/free-vector/saving-money-financial-concept_74855-7849.jpg?w=996&t=st=1671772157~exp=1671772757~hmac=7dcb70e6385b8e5c7a9ee8696cafe9f31e2cb0701f6c711246d2b30db1c5fd73" alt="Coins" />
                 </div> */}
 
-                <button>Get Started</button>
+                <button onClick={pageHandler}>Get Started</button>
             </div>
             <div className="banner">
                 <div className="create"><CCards title="Create Campaign" icon={CreateCamp} desc="We provide easy way to create a capaign for your idea or problems to raise funds"/></div>
