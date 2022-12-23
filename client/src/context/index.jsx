@@ -78,7 +78,7 @@ export const StateContextProvider = ({ children }) => {
   }
 
   const getFundedAmount = async() => {
-    const amount = 0;
+    let amount = 0;
      amount = await contract.call('getTotalFundedAmount', address);
      return amount;
   }
@@ -94,7 +94,8 @@ export const StateContextProvider = ({ children }) => {
         getCampaigns,
         getUserCampaigns,
         donate,
-        getDonations
+        getDonations,
+        getFundedAmount
       }}
     >
       {children}
