@@ -1,7 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@400;500;600;700&display=swap");
 *{
     margin: 0;
     padding: 0;
 }
+.NewHomepage{
+font-family: Epilogue;
+}
+
 .nav{
     height:10vh;
     display: flex;
@@ -30,16 +35,25 @@
     background-color: #13131A;
     gap:20px;
 }
+.wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
 .content button{
     margin-top: 80px;
     border-radius: 10px;
     padding: 12px;
     background-color:#8C6DFD;
-    font-weight: bold;
+    font-weight: 500;
 }
 .content h1{
     font-size: 40px;
     margin-bottom: 30px;
+    color: #43d48e;
+    font-weight: 500;
 }
 .details{
     height: 60vh;
@@ -63,9 +77,19 @@
 }
 .create,.donate,.track{
     width: 30%;
-    height: 85%;
+    height: 90vh;
     color: white;
     background-color: #43d48e;
     margin:20px;
     border-radius: 20px;
+    padding: 30px;
+}
+.banner{
+    margin-top: 150px;
+    height: 80vh;
+}
+.BannerImg{
+    height: 10%;
+    object-fit: cover;
+    
 }

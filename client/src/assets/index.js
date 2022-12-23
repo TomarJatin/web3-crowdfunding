@@ -12,6 +12,9 @@ import menu from './menu.svg';
 import money from './money.svg';
 import loader from './loader.svg';
 import thirdweb from './thirdweb.png';
+import CreateCamp from './CreateCamp.png';
+import TrackCamp from './TrackCamp.png';
+import DonateCamp from './DonateCamp.png';
 
 export {
   tagType,
@@ -28,4 +31,7 @@ export {
   money,
   loader,
   thirdweb,
+  CreateCamp,
+  TrackCamp,
+  DonateCamp
 };
