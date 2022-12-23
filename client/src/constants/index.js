@@ -14,8 +14,7 @@ export const navlinks = [
   {
     name: 'Your Funding Details',
     imgUrl: payment,
-    link: '/',
-    disabled: true,
+    link: '/funding-stats',
   },
   {
     name: 'Your Campaigns',
