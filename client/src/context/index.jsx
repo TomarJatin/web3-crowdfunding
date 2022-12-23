@@ -77,6 +77,12 @@ export const StateContextProvider = ({ children }) => {
     return parsedDonations;
   }
 
+  const getFundedAmount = async() => {
+    const amount = 0;
+     amount = await contract.call('getTotalFundedAmount', address);
+     return amount;
+  }
+
 
   return (
     <StateContext.Provider
